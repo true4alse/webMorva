@@ -35,3 +35,22 @@ p{
     display: flex;
     gap:0.5rem;
 }
+
+@media (max-width:1440px){
+    html{
+        font-size:var(--basic-font-tab);
+    }
+    .common-frame{
+        width:auto;
+        margin:0 2rem;
+    }
+}
+@media (max-width:768px){
+    html{
+        font-size: var(--basic-font-mobile);
+    }
+    .common-frame{
+        width:auto;
+        margin:0 1rem;
+    }
+}
