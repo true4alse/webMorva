@@ -35,6 +35,9 @@ p{
     display: flex;
     gap:0.5rem;
 }
+.mo{
+    display: none;
+}
 
 @media (max-width:1440px){
     html{
@@ -46,6 +49,7 @@ p{
     }
 }
 @media (max-width:768px){
+    .mo{display: block;}
     html{
         font-size: var(--basic-font-mobile);
     }

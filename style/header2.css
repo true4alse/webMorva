@@ -81,7 +81,7 @@ header .sns li{
         height:100%;
         left:0;
         top:0;
-        background-color: beige;
+        background-color: #fff;
         z-index: 3000;
     
     }
@@ -103,16 +103,80 @@ header .sns li{
     }
 
     .menu-content{
-        border:1px solid red;
-        max-height: calc(100vh - 5rem);
+        max-height: calc(100vh - 8rem);
         overflow: auto;
+        padding-top: 2rem;
+        box-sizing: border-box;
     }
     .gnb-smart{
         display: grid;
         grid-template-columns: repeat(4,1fr);
         gap:3rem 1rem;
+        font-size: var(--fs-bd2);
+    }
+    .gnb-smart>li{
+    }
+    .gnb-smart>li>a{
+        font-weight: var(--fw-bold);
+        display: block;
+        border-left: 3px solid var(--point-color);
+        padding-left: .5rem;
+        margin-bottom: 1rem;
+        color:var(--pm-color-700);
+    }
+    .gnb-smart ul{
+        font-weight: var(--fw-med);
+        display: flex;
+        flex-direction: column;
+        gap:.5rem;
+    }
+    .menu-sns{
+        height:3rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+@media (max-width:768px){
+    .gnb-smart{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap:0;
     }
     .gnb-smart>li{
         border:1px solid blue;
+        max-height: 40px;
+        overflow: hidden;
+        position: relative;
+    }
+    .gnb-smart>li>a{
+        display: flex;
+        height:40px;
+        align-items: center;
+        border-left: none;
+        padding-left: 0;
+        margin-bottom: 1rem;
+        color:#000;
+    }
+    .gnb-smart ul a{
+        display: flex;
+        height:30px;
+        align-items: center;
+    }
+    .gnb-smart ul{
+        gap:0;
+    }
+    .btn-more{
+        border:1px solid red;
+        position: absolute;
+        /* width:40px; */
+        padding-left: 20px;
+        height:40px;
+        right:0;
+        top:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
     }
 }
