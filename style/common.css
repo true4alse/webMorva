@@ -47,8 +47,14 @@ p{
 .pc{
     display: block;
 }
+main{
+    margin-top: 100px;
+}
 
 @media (max-width:1440px){
+    main{
+        margin-top: 5rem;
+    }
     html{
         font-size:var(--basic-font-tab);
     }
