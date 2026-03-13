@@ -41,6 +41,12 @@ p{
 .mo{
     display: none;
 }
+.tab{
+    display: none;
+}
+.pc{
+    display: block;
+}
 
 @media (max-width:1440px){
     html{
@@ -50,8 +56,13 @@ p{
         width:auto;
         margin:0 2rem;
     }
+    .mo{display: none;}
+    .tab{display: block;}
+    .pc{display: none;}
 }
 @media (max-width:768px){
+    .tab{display: none;}
+    .pc{display: none;}
     .mo{display: block;}
     html{
         font-size: var(--basic-font-mobile);
