@@ -24,6 +24,9 @@ p{
 .b2{
     font-size:var(--fs-bd2);
 }
+.fwr{font-weight: var(--fw-reg);}
+.fwm{font-weight: var(--fw-med);}
+.fwb{font-weight: var(--fw-bold);}
 .de{
     font-size:var(--fs-det);
 }
