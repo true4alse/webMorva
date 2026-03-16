@@ -88,6 +88,41 @@
     margin-bottom: var(--space-small);
 }
 
+.franchise{
+    background:
+    linear-gradient(30deg,rgba(0, 0, 0, 0.62),rgba(0, 0, 0, 0.62)),
+    url(../img/bg-franchise.jpg) no-repeat 50% 50% / cover;
+    color:#fff;
+    padding: var(--space-3x-large) 0;
+    text-align: center;
+}
+.franchise h1{
+    margin-bottom: var(--space-small);
+}
+.franchise h1+p{
+    margin-bottom: var(--space-x-large);
+}
+.franchise h3{
+    margin-top: var(--space-3x-large);
+}
+.why{
+    margin-top: var(--space-2x-large);
+    display: flex;
+    gap:var(--space-normal);
+    text-align: left;
+}
+.why>li{
+    background-color: rgba(83, 83, 83, 0.43);
+    padding:var(--space-normal);
+    border-radius: .5rem;
+    backdrop-filter: blur(10px);
+    /* 배경색이 투명해야만 적용이 된다. */
+}
+.why>li>p:first-of-type{
+    margin-bottom: var(--space-small);
+}
+
+
 
 
 
@@ -111,5 +146,10 @@
         display: flex;
         gap: var(--space-x-large);
         flex-direction: column;
+    }
+    .why{
+        display: grid;
+        gap:var(--space-normal);
+        grid-template-columns: repeat(2,1fr);
     }
 }

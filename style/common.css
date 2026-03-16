@@ -53,6 +53,17 @@ p{
 main{
     margin-top: 100px;
 }
+.btn-style{
+    display: inline-flex;
+    padding:0.25rem 0.75rem;
+    align-items: center;
+    gap: var(--space-normal);
+    border-bottom:1px solid #fff;
+}
+.btn-style:hover{
+    background-color: var(--point-color);
+    color:#fff;
+}
 
 @media (max-width:1440px){
     main{
