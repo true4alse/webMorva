@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded",()=>{
 
+    // ul태그에 li태그의 형태로 상품 데이터를 넣는 소스코드
     const list = document.querySelector(".list-grid")
     let result = ""
     listArray.forEach(item=>{
@@ -21,6 +22,12 @@ document.addEventListener("DOMContentLoaded",()=>{
         </li>`
     })
     list.innerHTML = result
+
+    // 상품 개수를 데이터 갯수에 맞게 입력하는 코드
+    document.querySelector("#current-count").innerHTML = listArray.length
+    
+    
+
 
     
 
